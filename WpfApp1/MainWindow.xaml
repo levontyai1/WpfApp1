@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Нарушители" Background="White" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="InsBtn"  Foreground="Black"  Content="Внесьти данные" Background="White" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.533,4.5" Height="69" Click="InsBtn_Click"/>
+        <Button x:Name="UpdBtn"  Foreground="Black" Content="Обновить данные" Background="White" HorizontalAlignment="Left" Margin="200,350,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-0.133,2.75" Height="69" Click="UpdBtn_Click"/>
+        <Button x:Name="ClrBtn"  Foreground="Black" Content="Очистить поля" Background="White" HorizontalAlignment="Left" Margin="635,350,0,0" VerticalAlignment="Top" Width="155" RenderTransformOrigin="-0.267,13"  Height="69" Click="ClrBtn_Click"/>
+        <Button x:Name="DelBtn"   Foreground="Black" Content="Удалить запись " Background="White"  HorizontalAlignment="Left" Margin="400,350,0,0" VerticalAlignment="Top" Width="155" Height="69" Click="DelBtn_Click"  />
+        <DataGrid   x:Name="datagrid" HorizontalAlignment="Left"  Background="White" Height="209" Margin="262,60,0,0" VerticalAlignment="Top" Width="503" />
+        <Label Content="IdViolator" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,38,0,0" FontWeight="Bold" Width="95"/>
+        <Label Content="Surname"  Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,105,0,0" FontWeight="Bold" RenderTransformOrigin="0.727,-0.269" Width="95"/>
+        <Label Content="Name" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,135,0,0" FontWeight="Bold" RenderTransformOrigin="0.639,-0.308" Width="96"/>
+        <Label Content="Patronymic" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,168,677,0" FontWeight="Bold" RenderTransformOrigin="0.741,0.808" Width="100"/>
+        <Label Content="Код" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,298,603,0" FontWeight="Bold" RenderTransformOrigin="3.071,4.547"/>
+        <Label Content="Passport Series" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0" FontWeight="Bold"/>
+        <Label Content="Passport Number" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,199,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="Textbox5" HorizontalAlignment="Left" Height="23" Margin="123,169,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox  x:Name="Textbox2" HorizontalAlignment="Left" Height="23" Margin="123,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="Textbox7" HorizontalAlignment="Left" Height="23" Margin="202,298,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox  x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="123,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="Textbox3" HorizontalAlignment="Left" Height="23" Margin="123,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Textbox4" HorizontalAlignment="Left" Height="23" Margin="123,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Textbox6" HorizontalAlignment="Left" Height="23" Margin="123,202,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
